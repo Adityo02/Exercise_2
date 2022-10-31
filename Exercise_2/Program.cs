@@ -62,6 +62,13 @@ namespace Exercise_2
             Console.Write("\n\nEnter number of elements: ");
             int max = Convert.ToInt32(Console.ReadLine());
             int[] numbers = new int[max];
+
+            //mengisi element selanjutnya
+            for (int AP = 0; AP < max; AP++)
+            {
+                Console.Write("\nEnter [" + (AP + 1).ToString() + "] element: ");
+                numbers[AP] = Convert.ToInt32(Console.ReadLine());
+            }
         }
     }
 }
