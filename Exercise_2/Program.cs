@@ -18,6 +18,15 @@ namespace Exercise_2
             eol = (mid - 1);
             pos = left;
             num = (right - left + 1);
+
+            //menrima angka untuk menentukan banyaknya data yang disimpan pada array
+            while ((left <= eol) && (mid <= right))
+            {
+                if (numbers[left] <= numbers[mid])
+                    adityo[pos++] = numbers[left++];
+                else
+                    adityo[pos++] = numbers[mid++];
+            }
         }
     }
 }
