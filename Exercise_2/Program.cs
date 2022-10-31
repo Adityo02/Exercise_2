@@ -10,6 +10,8 @@ namespace Exercise_2
     {
         static void Main(int[] numbers, int left, int mid, int right)
         {
+            //deklarasi array int dengan ukuran 60
+            int[] adityo = new int[60];
         }
     }
 }
