@@ -33,6 +33,13 @@ namespace Exercise_2
                 adityo[pos++] = numbers[left++];
             while (mid <= right)
                 adityo[pos++] = numbers[mid++];
+
+            // for n - 1 passes
+            for (AP = 0; AP < num; AP++)
+            {
+                numbers[right] = adityo[right];
+                right--;
+            }
         }
     }
 }
