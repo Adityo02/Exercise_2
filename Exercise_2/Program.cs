@@ -78,6 +78,13 @@ namespace Exercise_2
                 Console.Write(numbers[k] + " ");
                 Console.Write("\n");
             }
+
+            // Menampilkan array yang telah tersusun
+            Console.WriteLine("MergeSort By Recursive Method");
+            SortMerge(numbers, 0, max - 1);
+            for (int AP = 0; AP < max; AP++)
+                Console.WriteLine(numbers[AP]);
+            Console.ReadLine();
         }
     }
 }
