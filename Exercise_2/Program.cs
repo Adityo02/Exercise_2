@@ -8,7 +8,7 @@ namespace Exercise_2
 {
     class Program
     {
-        static void Main(int[] numbers, int left, int mid, int right)
+        static void MainMerge(int[] numbers, int left, int mid, int right)
         {
             //deklarasi array int dengan ukuran 60
             int[] adityo = new int[60];
@@ -39,6 +39,19 @@ namespace Exercise_2
             {
                 numbers[right] = adityo[right];
                 right--;
+            }
+        }
+
+        //fungsi / method untuk menerima masukan
+        static public void SortMerge(int[] numbers, int left, int right)
+        {
+            int mid;
+            if (right > left)
+            {
+                mid = (right + left) / 2;
+                SortMerge(numbers, left, mid);
+                SortMerge(numbers, (mid + 1), right);
+                MainMerge(numbers, left, (mid + 1), right);
             }
         }
     }
