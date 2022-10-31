@@ -69,6 +69,15 @@ namespace Exercise_2
                 Console.Write("\nEnter [" + (AP + 1).ToString() + "] element: ");
                 numbers[AP] = Convert.ToInt32(Console.ReadLine());
             }
+
+            //input array
+            Console.Write("Input int array : ");
+            Console.Write("\n");
+            for (int k = 0; k < max; k++)
+            {
+                Console.Write(numbers[k] + " ");
+                Console.Write("\n");
+            }
         }
     }
 }
