@@ -27,6 +27,12 @@ namespace Exercise_2
                 else
                     adityo[pos++] = numbers[mid++];
             }
+
+            //pada pass i, bandingkan n - 1 elemen pertama dengan elemen selanjutnya
+            while (left <= eol)
+                adityo[pos++] = numbers[left++];
+            while (mid <= right)
+                adityo[pos++] = numbers[mid++];
         }
     }
 }
