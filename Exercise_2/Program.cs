@@ -54,5 +54,14 @@ namespace Exercise_2
                 MainMerge(numbers, left, (mid + 1), right);
             }
         }
+
+        static void Main(string[] args)
+        {
+            // Pengguna memasukkan elemen pada array 
+            Console.Write("\nProgram for sorting a numeric array using Merge Sorting");
+            Console.Write("\n\nEnter number of elements: ");
+            int max = Convert.ToInt32(Console.ReadLine());
+            int[] numbers = new int[max];
+        }
     }
 }
