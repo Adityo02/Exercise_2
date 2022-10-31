@@ -12,6 +12,12 @@ namespace Exercise_2
         {
             //deklarasi array int dengan ukuran 60
             int[] adityo = new int[60];
+
+            //deklarasi variabel int untuk menyimpan banyaknya data yang disimpan pada array
+            int AP, eol, num, pos;
+            eol = (mid - 1);
+            pos = left;
+            num = (right - left + 1);
         }
     }
 }
